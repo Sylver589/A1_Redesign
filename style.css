@@ -1,0 +1,437 @@
+/* ==========================================================================
+   Mid-Fidelity Mobile Prototype Stylesheet
+   Project: Digital Storefront Mobile Redesign
+   ========================================================================== */
+
+/* 1. Global Reset & Box Sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #222222;
+  line-height: 1.4;
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px;
+}
+
+/* 2. Mobile Device Wrapper (Default: Desktop prototype view) */
+.mobile-container {
+  width: 100%;
+  max-width: 420px;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+/* 3. Header & Navigation */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #fafafa;
+  gap: 8px;
+}
+
+/* Logo Placeholder (Rectangle with wireframe cross) */
+.logo-placeholder {
+  width: 68px;
+  height: 32px;
+  border: 1px solid #9ca3af;
+  background: 
+    linear-gradient(to top right, transparent calc(50% - 1px), #d1d5db, transparent calc(50% + 1px)),
+    linear-gradient(to bottom right, transparent calc(50% - 1px), #d1d5db, transparent calc(50% + 1px)),
+    #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+}
+
+/* Top Nav Circle Icons & More Chevron */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.circle-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1.5px solid #6b7280;
+  background-color: #f9fafb;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-chevron {
+  font-size: 18px;
+  font-weight: 600;
+  color: #6b7280;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Header Actions (Search & Profile) */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+
+.search-btn {
+  font-size: 16px;
+  color: #374151;
+}
+
+/* Profile Circle Icon (Matches sketch silhouette circle) */
+.profile-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1.5px solid #6b7280;
+  font-size: 13px;
+  background-color: #f9fafb;
+}
+
+/* 4. Main Content Area */
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 5. Title & Intro Section */
+.intro-section {
+  padding: 18px 16px 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.intro-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.intro-description {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.45;
+}
+
+/* Circular Badge Placeholder with Wireframe 'X' */
+.placeholder-circle {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.intro-badge {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border: 1.5px solid #9ca3af;
+  background-color: #f3f4f6;
+  align-self: flex-end;
+  margin-bottom: 4px;
+}
+
+.cross-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #9ca3af;
+}
+
+.cross-1 {
+  transform: rotate(45deg);
+}
+
+.cross-2 {
+  transform: rotate(-45deg);
+}
+
+/* Filter Button */
+.filter-container {
+  margin-top: 16px;
+}
+
+.filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background-color: #ffffff;
+  border: 1.5px solid #4b5563;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1f2937;
+  cursor: pointer;
+}
+
+.filter-icon {
+  font-size: 12px;
+}
+
+.dropdown-arrow {
+  font-size: 9px;
+  margin-left: 2px;
+}
+
+/* 6. Featured Content Carousel Section */
+.featured-section {
+  padding: 16px 0;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #fbfbfb;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 4px 0;
+}
+
+/* Previous / Next Navigation Arrows */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #d1d5db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #374151;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.prev-arrow {
+  left: 8px;
+}
+
+.next-arrow {
+  right: 8px;
+}
+
+/* Carousel Track & Cards */
+.carousel-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.featured-card {
+  flex-shrink: 0;
+  background-color: #ffffff;
+  border: 1.5px solid #9ca3af;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main Active Featured Card */
+.card-active {
+  width: 250px;
+}
+
+/* Side Peeking Cards */
+.card-peek {
+  width: 48px;
+  opacity: 0.6;
+}
+
+/* Card Media / Wireframe Image Area with 'X' */
+.card-media {
+  width: 100%;
+  height: 120px;
+}
+
+.wireframe-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(to top right, transparent calc(50% - 1px), #9ca3af, transparent calc(50% + 1px)),
+    linear-gradient(to bottom right, transparent calc(50% - 1px), #9ca3af, transparent calc(50% + 1px)),
+    #f3f4f6;
+  border-bottom: 1.5px solid #9ca3af;
+}
+
+/* Top-Left Circular Badge Placeholder on Card */
+.card-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #6b7280;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.card-badge .cross-line {
+  background-color: #6b7280;
+}
+
+/* Card Details Footer (Text Lines & Button Placeholder) */
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  gap: 8px;
+  background-color: #ffffff;
+  min-height: 40px;
+}
+
+.card-info-lines {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card-btn-placeholder {
+  width: 54px;
+  height: 18px;
+  border: 1.5px solid #4b5563;
+  border-radius: 10px;
+  background-color: #f9fafb;
+  flex-shrink: 0;
+}
+
+.card-btn-placeholder.small {
+  width: 28px;
+  height: 14px;
+}
+
+/* 7. "About Our Bundles" Section */
+.about-section {
+  padding: 18px 16px 24px;
+}
+
+.section-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 14px;
+}
+
+/* Horizontal Cards Display */
+.about-cards-container {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+/* Individual About Card */
+.about-card {
+  flex: 1;
+  min-width: 100px;
+  background-color: #ffffff;
+  border: 1.5px solid #9ca3af;
+  border-radius: 6px;
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Wireframe Content Lines */
+.card-line {
+  background-color: #d1d5db;
+  border-radius: 3px;
+  height: 8px;
+  width: 100%;
+}
+
+.card-line-title {
+  height: 10px;
+  background-color: #9ca3af;
+  width: 75%;
+}
+
+.card-line-body {
+  width: 90%;
+}
+
+.card-line-body.short {
+  width: 50%;
+}
+
+/* ==========================================================================
+   8. Responsive Media Query (Screens <= 480px)
+   Removes desktop prototype frame to fill the full viewport on mobile devices
+   ========================================================================== */
+@media (max-width: 480px) {
+  body {
+    padding: 0;
+    background-color: #ffffff;
+  }
+
+  .mobile-container {
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}

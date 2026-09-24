@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Storefront Redesign - Software Bundles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Mobile Screen Container -->
+  <div class="mobile-container">
+
+    <!-- 1. Header & Navigation -->
+    <header class="site-header">
+      <!-- Logo Placeholder (Box with X) -->
+      <div class="placeholder-box logo-placeholder" aria-label="Logo placeholder">
+        <span>Logo</span>
+      </div>
+
+      <!-- Navigation Icons / Circles with More Chevron -->
+      <nav class="nav-icons" aria-label="Navigation icons">
+        <button type="button" class="circle-icon" aria-label="Nav Item 1"></button>
+        <button type="button" class="circle-icon" aria-label="Nav Item 2"></button>
+        <button type="button" class="circle-icon" aria-label="Nav Item 3"></button>
+        <span class="nav-chevron" aria-hidden="true">&rsaquo;</span>
+      </nav>
+
+      <!-- Header Actions: Search & Profile Icons -->
+      <div class="header-actions">
+        <button type="button" class="icon-btn search-btn" aria-label="Search">🔍</button>
+        <button type="button" class="icon-btn profile-btn" aria-label="User Profile">
+          <span class="profile-circle">👤</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+
+      <!-- 2. Title & Intro Section -->
+      <section class="intro-section">
+        <div class="intro-header">
+          <div class="intro-text">
+            <h1 class="page-title">Software Bundles</h1>
+            <p class="intro-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+          </div>
+
+          <!-- Circular Badge / Graphic Placeholder -->
+          <div class="placeholder-circle intro-badge" aria-label="Badge placeholder">
+            <span class="cross-line cross-1"></span>
+            <span class="cross-line cross-2"></span>
+          </div>
+        </div>
+
+        <!-- Bundles Filter Button -->
+        <div class="filter-container">
+          <button type="button" class="filter-btn">
+            <span class="filter-label">Bundles</span>
+            <span class="filter-icon" aria-hidden="true">⫚</span>
+            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- 3. Featured Content Display Area -->
+      <section class="featured-section" aria-label="Featured Content">
+        <div class="carousel-container">
+          <!-- Previous Card Arrow -->
+          <button type="button" class="carousel-arrow prev-arrow" aria-label="Previous featured item">
+            ‹
+          </button>
+
+          <!-- Cards Row / Carousel Track -->
+          <div class="carousel-track">
+            <!-- Left Peeking Card -->
+            <div class="featured-card card-peek card-prev">
+              <div class="card-media">
+                <div class="wireframe-image"></div>
+              </div>
+              <div class="card-footer">
+                <div class="card-btn-placeholder small"></div>
+              </div>
+            </div>
+
+            <!-- Active Center Card -->
+            <div class="featured-card card-active">
+              <!-- Top Wireframe Image with Badge Placeholder -->
+              <div class="card-media">
+                <div class="wireframe-image">
+                  <div class="card-badge" aria-label="Card badge placeholder">
+                    <span class="cross-line cross-1"></span>
+                    <span class="cross-line cross-2"></span>
+                  </div>
+                </div>
+              </div>
+              <!-- Bottom Info Area with Lines and Action Button -->
+              <div class="card-footer">
+                <div class="card-info-lines">
+                  <div class="card-line card-line-title"></div>
+                  <div class="card-line card-line-body"></div>
+                </div>
+                <div class="card-btn-placeholder" aria-hidden="true"></div>
+              </div>
+            </div>
+
+            <!-- Right Peeking Card -->
+            <div class="featured-card card-peek card-next">
+              <div class="card-media">
+                <div class="wireframe-image">
+                  <div class="card-badge" aria-label="Card badge placeholder">
+                    <span class="cross-line cross-1"></span>
+                    <span class="cross-line cross-2"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="card-info-lines">
+                  <div class="card-line card-line-body"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Next Card Arrow -->
+          <button type="button" class="carousel-arrow next-arrow" aria-label="Next featured item">
+            ›
+          </button>
+        </div>
+      </section>
+
+      <!-- 4. About Our Bundles Section -->
+      <section class="about-section">
+        <h2 class="section-title">About Our Bundles</h2>
+
+        <!-- Info Cards Row -->
+        <div class="about-cards-container">
+          <!-- Info Card 1 -->
+          <article class="about-card">
+            <div class="card-line card-line-title"></div>
+            <div class="card-line card-line-body"></div>
+            <div class="card-line card-line-body short"></div>
+          </article>
+
+          <!-- Info Card 2 -->
+          <article class="about-card">
+            <div class="card-line card-line-title"></div>
+            <div class="card-line card-line-body"></div>
+            <div class="card-line card-line-body short"></div>
+          </article>
+
+          <!-- Info Card 3 -->
+          <article class="about-card">
+            <div class="card-line card-line-title"></div>
+            <div class="card-line card-line-body"></div>
+            <div class="card-line card-line-body short"></div>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+
+</html>
