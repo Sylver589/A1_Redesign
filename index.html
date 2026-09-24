@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mobile Storefront Redesign - Software Bundles</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
   <!-- Mobile Screen Container -->
+  <!-- Mobile Screen Container (Simulates phone screen on desktop, full-width on mobile) -->
   <div class="mobile-container">
 
     <!-- 1. Header & Navigation -->
@@ -18,21 +18,41 @@
       <!-- Logo Placeholder (Box with X) -->
       <div class="placeholder-box logo-placeholder" aria-label="Logo placeholder">
         <span>Logo</span>
-      </div>
+      <!-- Humble Bundle Logo -->
+      <a href="#" class="logo-link" aria-label="Humble Bundle Home">
+        <img src="images/logo.png" alt="Humble Bundle" class="site-logo">
+      </a>
 
-      <!-- Navigation Icons / Circles with More Chevron -->
-      <nav class="nav-icons" aria-label="Navigation icons">
-        <button type="button" class="circle-icon" aria-label="Nav Item 1"></button>
-        <button type="button" class="circle-icon" aria-label="Nav Item 2"></button>
-        <button type="button" class="circle-icon" aria-label="Nav Item 3"></button>
-        <span class="nav-chevron" aria-hidden="true">&rsaquo;</span>
+      <!-- Navigation Circles & More Chevron -->
+      <nav class="nav-icons" aria-label="Navigation categories">
+        <button type="button" class="circle-icon" aria-label="Category 1"></button>
+        <button type="button" class="circle-icon" aria-label="Category 2"></button>
+        <button type="button" class="circle-icon" aria-label="Category 3"></button>
+
+        <!-- More Chevron (Easy to swap) -->
+        <span class="nav-chevron" aria-hidden="true">
+          <svg class="ui-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </span>
       </nav>
 
-      <!-- Header Actions: Search & Profile Icons -->
+      <!-- Header Action Buttons (Search & Profile) -->
       <div class="header-actions">
-        <button type="button" class="icon-btn search-btn" aria-label="Search">🔍</button>
-        <button type="button" class="icon-btn profile-btn" aria-label="User Profile">
-          <span class="profile-circle">👤</span>
+        <!-- Search Button (Easy to swap) -->
+        <button type="button" class="action-btn search-btn" aria-label="Search">
+          <svg class="ui-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Profile Button (Easy to swap) -->
+        <button type="button" class="action-btn profile-btn" aria-label="User profile">
+          <svg class="ui-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
         </button>
       </div>
     </header>
@@ -44,17 +64,18 @@
       <section class="intro-section">
         <div class="intro-header">
           <div class="intro-text">
-            <h1 class="page-title">Software Bundles</h1>
+            <h1 class="page-title">SOFTWARE BUNDLES</h1>
+            <!-- Placeholder copy for introductory text -->
             <p class="intro-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+              quis nostrud exercitation ullamco laboris.
             </p>
           </div>
 
-          <!-- Circular Badge / Graphic Placeholder -->
-          <div class="placeholder-circle intro-badge" aria-label="Badge placeholder">
-            <span class="cross-line cross-1"></span>
-            <span class="cross-line cross-2"></span>
+          <!-- Humble Pig Mascot Graphic -->
+          <div class="intro-mascot" aria-label="Humble Pig mascot">
+            <img src="images/pig.png" alt="Humble Bundle Mascot Pig" class="intro-pig-img">
           </div>
         </div>
 
@@ -62,27 +83,35 @@
         <div class="filter-container">
           <button type="button" class="filter-btn">
             <span class="filter-label">Bundles</span>
-            <span class="filter-icon" aria-hidden="true">⫚</span>
-            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+
+            <!-- Filter Funnel Icon (Easy to swap) -->
+            <svg class="ui-icon filter-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+            </svg>
+
+            <!-- Dropdown Chevron Icon (Easy to swap) -->
+            <svg class="ui-icon dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
           </button>
         </div>
       </section>
 
-      <!-- 3. Featured Content Display Area -->
+      <!-- 3. Featured Content Display Area (Carousel) -->
       <section class="featured-section" aria-label="Featured Content">
         <div class="carousel-container">
-          <!-- Previous Card Arrow -->
-          <button type="button" class="carousel-arrow prev-arrow" aria-label="Previous featured item">
-            ‹
+          <!-- Previous Card Arrow (Easy to swap) -->
+          <button type="button" class="carousel-arrow prev-arrow" aria-label="Previous item">
+            <svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
           </button>
 
-          <!-- Cards Row / Carousel Track -->
+          <!-- Carousel Track Holding Cards -->
           <div class="carousel-track">
             <!-- Left Peeking Card -->
             <div class="featured-card card-peek card-prev">
-              <div class="card-media">
-                <div class="wireframe-image"></div>
-              </div>
+              <div class="card-media wireframe-cross"></div>
               <div class="card-footer">
                 <div class="card-btn-placeholder small"></div>
               </div>
@@ -90,33 +119,29 @@
 
             <!-- Active Center Card -->
             <div class="featured-card card-active">
-              <!-- Top Wireframe Image with Badge Placeholder -->
-              <div class="card-media">
-                <div class="wireframe-image">
-                  <div class="card-badge" aria-label="Card badge placeholder">
-                    <span class="cross-line cross-1"></span>
-                    <span class="cross-line cross-2"></span>
-                  </div>
+              <!-- Card Media with wireframe X and circular badge -->
+              <div class="card-media wireframe-cross">
+                <div class="card-badge" aria-label="Badge placeholder">
+                  <span class="cross-line cross-1"></span>
+                  <span class="cross-line cross-2"></span>
                 </div>
               </div>
-              <!-- Bottom Info Area with Lines and Action Button -->
+              <!-- Card Footer with text lines and action button -->
               <div class="card-footer">
                 <div class="card-info-lines">
                   <div class="card-line card-line-title"></div>
                   <div class="card-line card-line-body"></div>
                 </div>
-                <div class="card-btn-placeholder" aria-hidden="true"></div>
+                <div class="card-btn-placeholder"></div>
               </div>
             </div>
 
             <!-- Right Peeking Card -->
             <div class="featured-card card-peek card-next">
-              <div class="card-media">
-                <div class="wireframe-image">
-                  <div class="card-badge" aria-label="Card badge placeholder">
-                    <span class="cross-line cross-1"></span>
-                    <span class="cross-line cross-2"></span>
-                  </div>
+              <div class="card-media wireframe-cross">
+                <div class="card-badge" aria-label="Badge placeholder">
+                  <span class="cross-line cross-1"></span>
+                  <span class="cross-line cross-2"></span>
                 </div>
               </div>
               <div class="card-footer">
@@ -127,16 +152,18 @@
             </div>
           </div>
 
-          <!-- Next Card Arrow -->
-          <button type="button" class="carousel-arrow next-arrow" aria-label="Next featured item">
-            ›
+          <!-- Next Card Arrow (Easy to swap) -->
+          <button type="button" class="carousel-arrow next-arrow" aria-label="Next item">
+            <svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
           </button>
         </div>
       </section>
 
       <!-- 4. About Our Bundles Section -->
       <section class="about-section">
-        <h2 class="section-title">About Our Bundles</h2>
+        <h2 class="section-title">ABOUT OUR BUNDLES</h2>
 
         <!-- Info Cards Row -->
         <div class="about-cards-container">
@@ -168,5 +195,4 @@
   </div>
 
 </body>
-
 </html>
